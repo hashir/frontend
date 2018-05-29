@@ -26,6 +26,7 @@ export class FilterComponent implements OnInit {
   }
   clearFilters() {
     this.clear = true;
+    this.filterParams = {};
     this.service.resultSubject.next({});
   }
 }
