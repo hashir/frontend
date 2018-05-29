@@ -1,4 +1,5 @@
 export const FilterDiskConfig = [
+  { value: 0.01, label: '100GB' },
   { value: 0.25, label: '250GB' },
   { value: 0.5, label: '500GB' },
   { value: 1, label: '1TB' },

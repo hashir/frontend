@@ -11,7 +11,7 @@ export class LeasewebService {
   constructor(private http: HttpClient) {}
 
   getListData(param = {}): Observable<any> {
-    return this.http.get(`/servers?${this.parseParam(param)}`);
+    return this.http.get(`/servers/list?${this.parseParam(param)}`);
   }
   private parseParam(param) {
     const pKeys = Object.keys(param);
@@ -22,6 +22,6 @@ export class LeasewebService {
     return params.join('&');
   }
   getLocationList(): Observable<any> {
-    return this.http.get(`/locations`);
+    return this.http.get(`/locations/list`);
   }
 }
