@@ -1,0 +1,29 @@
+section#filter {
+  margin: 1rem 0 0;
+  h6 {
+    background: #e4e5e8;
+    padding: 0.7rem 1em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .content {
+    margin: 1rem 2rem 0;
+    border-bottom: 1px solid #aaaaaa57;
+    padding-bottom: 2rem;
+  }
+}
+
+.filter-sidebar {
+  padding: 0;
+  & #filter:first-child {
+    margin-top: 0;
+  }
+  & #filter:last-child {
+    margin-bottom: 0;
+  }
+  & #filter:last-child .content {
+    border-bottom: 0;
+  }
+}

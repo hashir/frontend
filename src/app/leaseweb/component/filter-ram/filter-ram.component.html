@@ -1,0 +1,10 @@
+<section id="filter">
+    <h6>Ram</h6>
+    <div class="content">
+        <div *ngFor="let ram of ramCheckbox;  index as i" class="mb-1">
+            <input type="checkbox" id="ram-{{i}}" [(ngModel)]="ramCheckbox[i]['value']" (change)="emitValue();" />
+            <label for="ram-{{i}}" class="pl-2"> {{ ram.display }}</label>
+
+        </div>
+    </div>
+</section>

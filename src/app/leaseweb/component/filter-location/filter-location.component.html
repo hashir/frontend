@@ -1,0 +1,8 @@
+<section id="filter">
+  <h6>Locations</h6>
+  <div class="content">
+    <select [ngModel]="location" (ngModelChange)="emitValue($event)" class="d-block custom-select">
+      <option *ngFor="let dtype of locationList" [value]="dtype.id">{{ dtype.code }}</option>
+    </select>
+  </div>
+</section>

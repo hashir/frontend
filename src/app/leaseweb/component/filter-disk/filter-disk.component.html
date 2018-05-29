@@ -1,0 +1,14 @@
+<section id="filter">
+  <h6>Storage</h6>
+  <div class="content">
+    <div class="d-flex justify-content-between">
+      <small class="text-info">
+        {{ diskData[value[0]].label }}
+      </small>
+      <small class="text-danger">
+        {{ diskData[value[1]].label }}
+      </small>
+    </div>
+    <ui-slider [ngModel]="value" [range]="true" [min]="0" [max]="10" [step]="1" (ngModelChange)="emitValue($event)"></ui-slider>
+  </div>
+</section>

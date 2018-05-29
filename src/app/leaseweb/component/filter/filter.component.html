@@ -1,0 +1,10 @@
+<div class="card filter-sidebar ">
+  <div class="card-header d-flex justify-content-between mb-0">
+    <div>Filters</div>
+    <small class="text-primary text-link" (click)="clearFilters();">Clear all</small>
+  </div>
+  <leaseweb-filter-disk (filtered)="getFiltered($event)" [clear]="clear"></leaseweb-filter-disk>
+  <leaseweb-filter-ram (filtered)="getFiltered($event)" [clear]="clear"></leaseweb-filter-ram>
+  <leaseweb-filter-disk-type (filtered)="getFiltered($event)" [clear]="clear"></leaseweb-filter-disk-type>
+  <leaseweb-filter-location (filtered)="getFiltered($event)" [clear]="clear"></leaseweb-filter-location>
+</div>
